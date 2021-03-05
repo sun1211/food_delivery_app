@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/constants.dart';
 import 'package:food_delivery_app/models/food_model.dart';
+import 'package:food_delivery_app/screen/detail/detail_screen.dart';
 import 'package:food_delivery_app/screen/home/components/food_card.dart';
 import 'package:food_delivery_app/screen/home/components/popular_card.dart';
 import 'package:food_delivery_app/size_config.dart';
@@ -38,7 +39,15 @@ class Body extends StatelessWidget {
                               itemCount: foodList.length,
                               controller: pageController,
                               itemBuilder: (context, index) => FoodCard(
-                                    press: () {},
+                                    press: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (_) => DetailScreen(
+                                              food: foodList[index],
+                                            ),
+                                          ));
+                                    },
                                     food: foodList[index],
                                     itemsIndex: index,
                                   )),

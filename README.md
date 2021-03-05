@@ -1,6 +1,6 @@
-# Commerce App
+## Food Delivery Application
 
-Commerce is a demo UI
+Food Delivery Application is a demo UI
 
 ## Installation
 
@@ -31,3 +31,4 @@ flutter run -d chrome
 
 ## Screen Shot
 ![](https://raw.githubusercontent.com/sun1211/food_delivery_app/master/screenShot/Screenshot_1614939633.png)
+![](https://raw.githubusercontent.com/sun1211/food_delivery_app/master/screenShot/Screenshot_1614947113.png)
